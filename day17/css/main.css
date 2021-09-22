@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@media screen and (min-width: 300px) {
+    @media only screen and (max-width: 900px) {
+        *{
+          font-size:small !important;
+        }
+      }
+p{ 
+    width: 100%;
+    height: auto;
+    font-family: 'Bonheur Royale', cursive;
+    font-size:50px;}
 #image{
+    
         width: 100%;
         height: auto;
 
@@ -11,11 +24,49 @@
     margin-top:15px ;
     margin-bottom:10px;
 }
+
 #title{
     text-align: center;
+    background-color:rgb(31, 186, 224);
+    padding-bottom:0px ;
+    
 
 }
+
+}
+#img-caption{
+    color:gray;
+}
+
 main{
     background-color:#F7F0CE;
     color:fff;
 }
+.contaner{
+    display: flex;
+    border: 10px dotted transparent;
+    padding:1vh 10vh 1vh 2vh;
+}
+#date{
+    text-transform: lowercase;
+}
+a>l_img{
+    height:50px;
+    width:50px;
+
+}
+.playlist{display:grid;
+    grid-gap: 10em;
+
+}
+a{background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;}
+  a:hover {
+    opacity: .6;
+  }
+ 
