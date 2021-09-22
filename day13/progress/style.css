@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+    .main{
+      font-family:"Poppins",sans-serif;
+    }  
+ 
+  
+.background{
+    min-height:100vh;
+    font-family: "Poppins", sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  }
+  .glass {
+    display:flex;
+      
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    border-radius: 2rem;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    z-index: 2;
+    backdrop-filter:blur(2rem); 
+    
+      
+  }
+  .circle1, .circle2{
+    background: rgb(255, 253, 253);
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    height:20rem;
+    width:20rem;
+    position:absolute;
+    border-radius:50%;
+  }
+  .circle1{
+      
+    bottom:0rem;
+    left:10rem;
+    
+
+  }
+  .circle2{
+    top:2rem;
+    right:20rem;
+
+  }
+  .user{
+      border: radius 50%;
+      height:20rem;
+      width:20rem;
+      
+  }
+  
+.dashboard{
+      display:grid;
+      grid-template-rows: 2fr 2fr;
+      -ms-grid-row-align: center;
+      text-align:center;
+      background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+      border-radius:2rem ;
+
+
+      
+     
+      
+  }
+  .states{
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content:center;
+    /* flex: 2; */
+    
+  }
+ .anuj{
+      border-radius: 50%;
+  }
+  .links{
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    text-align: center;
+   
+    padding:1rem 5rem;
+    justify-content:space-evenly; 
+  }
+  h1{
+    color:#1769d4;
+    opacity:0.8 ;
+  }
+  h2,p{
+    font-weight: 700;
+    color:#1059b8;
+    opacity:0.6 ;
+  }
+  .user{
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+    padding-top:15px ;
+    
+    text-align:center; 
+  }
+  /* .card{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    /* flex: 2; */
+    align-content: space-between;
+  } */
+  .container{
+    display:grid;
+    grid-template-columns:1/2 ;
+    grid-template-rows: max-content;
+  }
+  .container>div{
+    grid-template-rows:1fr 1fr 1fr ;
+  }

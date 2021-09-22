@@ -1,0 +1,21 @@
+#image{
+        width: 100%;
+        height: auto;
+
+      }
+.img-div{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+    margin-top:15px ;
+    margin-bottom:10px;
+}
+#title{
+    text-align: center;
+
+}
+main{
+    background-color:#F7F0CE;
+    color:fff;
+}

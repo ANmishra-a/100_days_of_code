@@ -1,0 +1,29 @@
+h1{
+    background-color:pink;
+    /* width: 150px; */
+    /* height: 150px;  */
+    border: 5px solid black;
+    margin: 10px;
+    
+}
+.container{
+    display:flex;
+    background-color:#eee;
+    margin: 100px;
+    border: 3px solid black;
+    height: 400px;
+    justify-content:space-around; 
+    align-items:baseline;
+
+    
+} 
+.item1{background-color:orange;
+height:30px ;}
+.item2{background-color:red ;height:70px; font-size:30px;} 
+.item3{background-color:orange;height:90px;}
+.item4{background-color:red;font-size:60px;}
+.item5{background-color:orange;height:70px;}
+.item6{background-color:red;height:20px;}
+.item{
+    margin: 10px;
+}
