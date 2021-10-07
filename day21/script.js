@@ -15,8 +15,8 @@ if (userInput.value.length > 0) {
  
     
 })
-// added kye press event to input field when pressed enter key(not working)
-input.addEventListener("keypress", function(event) {
+// added kye press event to input field when pressed enter key
+userInput.addEventListener("keypress", function(event) {
     if (userInput.value.length > 0 && event.keyCode ===13) {
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(userInput.value));

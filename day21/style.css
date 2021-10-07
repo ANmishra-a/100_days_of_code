@@ -1,8 +1,70 @@
 body{
     margin: 0px;
+    background-color: rgba(44,127,150,0.787037037037037) 38%, rgba(0,212,255,1) 100%);
+}
+main{ 
+    width: 100vw;
+    height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(110deg, rgba(2,0,36,1) 0%, rgba(44,127,150,0.787037037037037) 38%, rgba(0,212,255,1) 100%);
+
 }
 .container{
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    
+    display:grid;
+    
+    grid-template-rows: 2fr 2fr;
+    align-items: center;
+    justify-content: space-around;
+    align-content: stretch;
+    justify-items: center;
+   
+    
+   
+}
+h1{
+    padding:5px 10px;
+    color: rgb(43, 49, 49);
+    text-decoration-color: black;
+    text-transform: uppercase;
+}
+.title{
+    margin-top: 5ex;
+    border: 10px solid rgb(194, 140, 176);
+    background-color:rgb(191, 156, 200);
+    border-radius: 30% 10px;
+    box-shadow:2px  2px 2px rgb(194, 140, 176);
+    text-shadow: 2px 1px 2px white , 3px 2px 5px rgb(236, 255, 168) ;
+}
+input{
+    padding: 10px;
+    border-radius: 15px;
+    border:0ch;
+    box-shadow: 2px 3px 10px white;
+}
+button{
+    background-color: aqua;
+    padding: 14px 20px  ;
+    color: rgb(36, 41, 48);
+    box-shadow: 2px 3px 10px aqua;
+    border:none;
+    
+}
+.circle{
+    height:100px;
+    width:100px;
+   position: relative;
+    background-color:white;
+    border-radius:100%;
+    opacity: 0.5;
+    animation: circle 5s infinite;
+    
+
+}
+@keyframes circle{
+    0%   {top: 0px; }
+    25%  {top: 200px;}
+    50%  {top: 100px;}
+    75%  {top: 200px;}
+    100% {top: 0px;}
 }
