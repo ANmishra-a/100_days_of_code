@@ -1,0 +1,38 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+body{
+    background-color:aquamarine;
+}
+.board{
+    width:70%;
+    height:70%;
+    background-color:rgb(248, 248, 248);
+    box-shadow: 5px 5px 5px black;
+    position:absolute;
+    top:10%;
+    left:20%;
+}
+#switchs1{
+width:200px;
+height:250px;
+position: relative;
+top:10%;
+left:10%;
+border:10px solid rgb(53, 48, 48);
+display:flex;
+}
+#switchs1 >#switch1{
+    height:240px;
+    width:100px;
+    border: 2px solid black;
+    box-shadow: 5px 5px  black;
+}
+#switchs1 >#switch2{
+    height:240px;
+    width:100px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px 5px  black;
+}
