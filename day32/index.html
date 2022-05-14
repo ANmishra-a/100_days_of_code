@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>code war</title>
+    <script>
+      //   function titleCase(title, minorWords) {
+      //     let answer = [];
+      //     let first = title.split(" ");
+      //     let second = minorWords.split(" ");
+      //     for (let i = 0; i < first.length; i++) {
+      //       if (second.includes(first[i]) && i != 0) {
+      //         answer.push(first[i]);
+      //       } else if (second.includes(first[i]) && i == 0) {
+      //         answer.push(first[i].toUpperCase());
+      //       } else
+      //         answer.push(
+      //           first[i][0].toUpperCase() + first[i].slice(1).toLowerCase()
+      //         );
+      //     }
+      //     return answer.join(" ");
+      //   }
+      //   function titleCase(title, minorWords) {
+      //     if (title != undefined && minorWords != undefined) {
+      //       let answer = [];
+      //       let first = title.toLowerCase().split(" ");
+      //       let second = minorWords.toLowerCase().split(" ");
+      //       for (let i = 0; i < first.length; i++) {
+      //         if (second.includes(first[i]) && i != 0) {
+      //           answer.push(first[i]);
+      //         } else if (second.includes(first[i]) && i == 0) {
+      //           answer.push(
+      //             first[i][0].toUpperCase() + first[i].slice(1).toLowerCase()
+      //           );
+      //         } else
+      //           answer.push(
+      //             first[i][0].toUpperCase() + first[i].slice(1).toLowerCase()
+      //           );
+      //       }
+      //       return answer.join(" ");
+      //     } else if (
+      //       title != undefined &&
+      //       title != "" &&
+      //       minorWords == undefined
+      //     ) {
+      //       let answer = [];
+      //       let first = title.split(" ");
+      //       for (let i = 0; i < first.length; i++) {
+      //         answer.push(
+      //           first[i][0].toUpperCase() + first[i].slice(1).toLowerCase()
+      //         );
+      //       }
+      //       return answer.join(" ");
+      //     } else {
+      //       console.log("");
+      //     }
+      //   }
+      function toTitle(string) {
+        if (string.length >= 1) {
+          return string[0].toUpperCase() + string.slice(1).toLowerCase();
+        } else {
+          return string;
+        }
+      }
+
+      function titleCase(title, minorWords) {
+        if (minorWords == undefined) {
+          minorWords = new Set();
+        } else {
+          minorWords = new Set(
+            minorWords.split(" ").map((x) => x.toLowerCase())
+          );
+        }
+        const inputStrings = title.split(" ").map((x) => x.toLowerCase());
+        const result = [];
+        for (let index = 0; index < inputStrings.length; index++) {
+          const element = inputStrings[index];
+          if (index == 0) {
+            result.push(toTitle(element));
+          } else {
+            if (minorWords.has(element.toLowerCase())) {
+              result.push(element);
+            } else {
+              result.push(toTitle(element));
+            }
+          }
+        }
+        return result.join(" ");
+      }
+      // titleCase(undefined);
+      titleCase("");
+      console.log(titleCase("a clash of KINGS", "a an the of"));
+      console.log(titleCase("THE WIND IN THE WILLOWS", "The In"));
+      //   titleCase("the quick brown fox");
+      //   titleCase("a clash of KINGS");
+      //   let arr;
+      //   const changeToTitle = function (string) {
+      //     for (let i = 0; i < string.length; i++) {
+      //       console.log(string[0].toUpperCase() + string.slice(1).toLowerCase());
+      //     }
+      //   };
+      //   changeToTitle("anuj");
+      //   //   const separator = function (sentence) {
+      //   //     return sentence.split(" ");
+      //   //   };
+
+      //   //   //   separator("this is a comment");
+
+      //   //   const checkExceptions = function (stringOne, stringTwo) {
+      //   //     let one = separator(stringOne);
+
+      //   //     let second = separator(stringTwo);
+      //   //     console.log(one, second);
+      //   //     for (let i = 0; i < one.length; i++) {
+      //   //       if (second.includes(one[i]) && i != 0) {
+      //   //         console.log(one[i]);
+      //   //       } else {
+      //   //         console.log(changeToTitle(one));
+      //   //       }
+      //   //     }
+
+      //   //     // for (let i = 0; i < stringOne.length; i++) {
+      //   //     //   console.log(stringOne.indexOf(stringTwo[i]), stringTwo[i]);
+      //   //     // }
+      //   //   };
+      //   //   checkExceptions("a clash of KINGS", "a an the of");
+      //   //   changeToTitle("anuj");
+    </script>
+  </head>
+  <body>
+    <h1>CodeWar</h1>
+    <p class="Question">
+      A string is considered to be in title case if each word in the string is
+      either (a) capitalised (that is, only the first letter of the word is in
+      upper case) or (b) considered to be an exception and put entirely into
+      lower case unless it is the first word, which is always capitalised.<br />
+
+      Write a function that will convert a string into title case, given an
+      optional list of exceptions (minor words). The list of minor words will be
+      given as a string with each word separated by a space. Your function
+      should ignore the case of the minor words string -- it should behave in
+      the same way even if the case of the minor word string is changed.<br />
+
+      ###Arguments (Haskell)<br />
+
+      First argument: space-delimited list of minor words that must always be
+      lowercase except for the first word in the string. Second argument: the
+      original string to be converted. ###Arguments (Other languages)<br />
+
+      First argument (required): the original string to be converted.<br />
+      Second argument (optional): space-delimited list of minor words that must
+      always be lowercase except for the first word in the string. The
+      JavaScript/CoffeeScript tests will pass undefined when this argument is
+      unused. ###Example
+      <code></code>
+    </p>
+    <style>
+      body {
+        background: cornsilk;
+        color: black;
+      }
+      P {
+        border: 1px solid black;
+        height: fit-content;
+        width: fit-content;
+        margin: 10 10;
+        padding: 10vw 5vh;
+      }
+    </style>
+  </body>
+</html>
