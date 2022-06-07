@@ -66,9 +66,47 @@ const visitor6 = {
     signed: false,
   },
 };
-gtcVersion(visitor1);
-gtcVersion(visitor2);
-gtcVersion(visitor3);
-gtcVersion(visitor4);
-gtcVersion(visitor5);
-gtcVersion(visitor6);
+// gtcVersion(visitor1);
+// gtcVersion(visitor2);
+// gtcVersion(visitor3);
+// gtcVersion(visitor4);
+// gtcVersion(visitor5);
+// gtcVersion(visitor6);
+
+//........................
+function twoSum(array1, array2) {
+  const arr1 = Number(array1.join(""));
+  console.log(arr1 + Number(array2.join("")));
+  console.log(sum);
+}
+// twoSum([1, 2, 3], [0, 7]);
+function luckyNumber(value) {
+  let array = [];
+  let str = String(value);
+  for (let a = 0; a < str.length; a++) {
+    array.push(str[a]);
+  }
+
+  // debugger;
+  let i = 0;
+  for (let j = array.length - 1; j > i; j--) {
+    if (array[j] === array[i]) {
+      i++;
+    } else {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(luckyNumber(1053501));
+
+// console.log(luckyNumber(4891198));
+// function sap(value) {
+//   let arr = [];
+//   let str = String(value);
+//   for (let a = 0; a < str.length; a++) {
+//     arr.push(str[a]);
+//   }
+//   console.log(arr);
+// }
+// sap(4891198);
