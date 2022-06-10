@@ -1,6 +1,6 @@
 const array = [1, 4, 6, 7, 9, 3, 6, 2, 1];
 const number = array.find((x) => x > 7);
-console.log(number);
+// console.log(number);
 function ticketStatus(tickets, ticketId) {
   if (tickets[ticketId] === undefined || tickets[ticketId] === null) {
     return "invalid ticket !!!";
@@ -13,13 +13,13 @@ const tickets = {
   "23LA9T41": "Verena Nardi",
 };
 
-ticketStatus(tickets, "RE90VAW7");
-// => 'unknown ticket id'
+// ticketStatus(tickets, "RE90VAW7");
+// // => 'unknown ticket id'
 
-ticketStatus(tickets, "0H2AZ123");
-// => 'not sold'
+// ticketStatus(tickets, "0H2AZ123");
+// // => 'not sold'
 
-ticketStatus(tickets, "23LA9T41");
+// ticketStatus(tickets, "23LA9T41");
 // => 'sold to Verena Nardi'
 function gtcVersion(visitor) {
   console.log(visitor.gtc?.version);
@@ -66,9 +66,24 @@ const visitor6 = {
     signed: false,
   },
 };
-gtcVersion(visitor1);
-gtcVersion(visitor2);
-gtcVersion(visitor3);
-gtcVersion(visitor4);
-gtcVersion(visitor5);
-gtcVersion(visitor6);
+// gtcVersion(visitor1);
+// gtcVersion(visitor2);
+// gtcVersion(visitor3);
+// gtcVersion(visitor4);
+// gtcVersion(visitor5);
+// gtcVersion(visitor6);
+function errorMessage(input) {
+  if (input !== "number") {
+    return "Must be a number besides 0";
+  } else if (input === "" || input === null || input === undefined) {
+    return "Required field";
+  }
+}
+console.log(errorMessage("123"));
+// => ''
+
+console.log(errorMessage(""));
+// => 'Required field'
+
+console.log(errorMessage("abc"));
+// => 'Must be a number besides 0'
