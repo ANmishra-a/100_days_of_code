@@ -1,0 +1,28 @@
+.container {
+  width: 100vw;
+  height: 50%;
+  background-color: yellow;
+  border: 5px solid black;
+  padding: 10rem;
+  /* display: block; */
+  /* display: inline-block; */
+  display: flex;
+  /* position: absolute; */
+}
+.box1 {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border: 1px solid black;
+  margin: 5px;
+  position: relative;
+  top: -155px;
+  left: -150px;
+}
+.box2 {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 128, 0, 0.4);
+  border: 1px solid black;
+  margin: 5px;
+}
