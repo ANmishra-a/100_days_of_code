@@ -1,17 +1,17 @@
-// const array = [1, 4, 6, 7, 9, 3, 6, 2, 1];
-// const number = array.find((x) => x > 7);
+const array = [1, 4, 6, 7, 9, 3, 6, 2, 1];
+const number = array.find((x) => x > 7);
 // console.log(number);
-// function ticketStatus(tickets, ticketId) {
-//   if (tickets[ticketId] === undefined || tickets[ticketId] === null) {
-//     return "invalid ticket !!!";
-//   } else {
-//     return tickets[ticketId];
-//   }
-// }
-// const tickets = {
-//   "0H2AZ123": null,
-//   "23LA9T41": "Verena Nardi",
-// };
+function ticketStatus(tickets, ticketId) {
+  if (tickets[ticketId] === undefined || tickets[ticketId] === null) {
+    return "invalid ticket !!!";
+  } else {
+    return tickets[ticketId];
+  }
+}
+const tickets = {
+  "0H2AZ123": null,
+  "23LA9T41": "Verena Nardi",
+};
 
 // ticketStatus(tickets, "RE90VAW7");
 // // => 'unknown ticket id'
@@ -20,7 +20,7 @@
 // // => 'not sold'
 
 // ticketStatus(tickets, "23LA9T41");
-// // => 'sold to Verena Nardi'
+// => 'sold to Verena Nardi'
 function gtcVersion(visitor) {
   console.log(visitor.gtc?.version);
 }
@@ -72,6 +72,7 @@ const visitor6 = {
 // gtcVersion(visitor4);
 // gtcVersion(visitor5);
 // gtcVersion(visitor6);
+
 
 //........................
 function twoSum(array1, array2) {
