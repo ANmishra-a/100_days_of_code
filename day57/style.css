@@ -1,0 +1,141 @@
+:root {
+  --red: #ea5e5e;
+  --yellow: #f7ba3e;
+  --blue: #56b3b4;
+  --background: #1a2b34;
+  --gray: #334651;
+  --purple: #bf85bf;
+  --unit: 10px;
+}
+body {
+  background: var(--background);
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--unit);
+  /* background-color: aliceblue; */
+  margin-top: 20%;
+  margin-left: 20%;
+  overflow: hidden;
+}
+.row {
+  height: var(--unit);
+  display: flex;
+  gap: var(--unit);
+}
+.row:hover {
+  border: 2px solid red;
+}
+.cell {
+  height: 100%;
+  background-color: var(--gray);
+  border-radius: 1000px;
+  width: calc(var(--size, 2) * var(--unit));
+}
+.cell.size-3 {
+  --size: 3;
+}
+.cell.size-4 {
+  --size: 4;
+}
+.cell.size-5 {
+  --size: 5;
+}
+.cell.size-6 {
+  --size: 6;
+}
+.cell.size-7 {
+  --size: 7;
+}
+.cell.size-8 {
+  --size: 8;
+}
+.cell.size-9 {
+  --size: 9;
+}
+.cell.size-10 {
+  --size: 10;
+}
+.cell.size-11 {
+  --size: 11;
+}
+.cell.size-12 {
+  --size: 12;
+}
+.cell.blue {
+  background-color: var(--blue);
+}
+.cell.red {
+  background-color: var(--red);
+}
+.cell.yellow {
+  background-color: var(--yellow);
+}
+.cell.gray {
+  background-color: var(--gray);
+}
+.cell.purple {
+  background-color: var(--purple);
+}
+.cell.transparent {
+  background-color: var(--background);
+}
+.row:nth-child(1) {
+  --delay: 1;
+}
+.row:nth-child(2) {
+  --delay: 2;
+}
+.row:nth-child(3) {
+  --delay: 3;
+}
+.row:nth-child(4) {
+  --delay: 4;
+}
+.row:nth-child(5) {
+  --delay: 5;
+}
+.row:nth-child(6) {
+  --delay: 6;
+}
+.row:nth-child(7) {
+  --delay: 7;
+}
+.row:nth-child(8) {
+  --delay: 8;
+}
+.row:nth-child(9) {
+  --delay: 9;
+}
+.row:nth-child(10) {
+  --delay: 10;
+}
+.row:nth-child(11) {
+  --delay: 11;
+}
+.row:nth-child(12) {
+  --delay: 12;
+}
+.row:nth-child(13) {
+  --delay: 13;
+}
+.row:nth-child(14) {
+  --delay: 14;
+}
+
+.row {
+  translate: -90px;
+  animation: load-row 1s calc(var(--delay) * 100ms + 500ms) forwards;
+}
+.row:nth-child(2n) {
+  translate: 50px;
+}
+@keyframes load-row {
+  100% {
+    translate: 0;
+  }
+}

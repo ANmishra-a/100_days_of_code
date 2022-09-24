@@ -66,13 +66,13 @@
 // };
 // let temperatures = [73, 74, 75, 71, 69, 72, 76, 73];
 // console.log(dailyTemperatures(temperatures));
-function descendingOrder(n) {
-  let newArr = n
-    .toString()
-    .split("")
-    .sort((a, b) => b - a)
-    .join("");
+// function descendingOrder(n) {
+//   let newArr = n
+//     .toString()
+//     .split("")
+//     .sort((a, b) => b - a)
+//     .join("");
 
-  return Number(newArr);
-}
-console.log(descendingOrder(0));
+//   return Number(newArr);
+// }
+// console.log(descendingOrder(0));

@@ -24,23 +24,23 @@
 // 1 <= prices.length <= 105
 // 0 <= prices[i] <= 104
 // Approach one
-// var maxProfit = function (prices) {
-//   let j;
-//   let ans = -1;
-//   for (let i = 0; i < prices.length - 1; i++) {
-//     j = i + 1;
-//     while (prices[j] < prices[i]) {
-//       j++;
-//     }
-//     if (j > prices.length - 1) {
-//       ans = Math.max(ans, 0);
-//     } else {
-//       ans = Math.max(ans, prices[j] - prices[i]);
-//     }
-//   }
-//   return ans;
-// };
+var maxProfit = function (prices) {
+  let j;
+  let ans = -1;
+  for (let i = 0; i < prices.length - 1; i++) {
+    j = i + 1;
+    while (prices[j] < prices[i]) {
+      j++;
+    }
+    if (j > prices.length - 1) {
+      ans = Math.max(ans, 0);
+    } else {
+      ans = Math.max(ans, prices[j] - prices[i]);
+    }
+  }
+  return ans;
+};
 
-// let prices = [7, 6, 4, 3, 1];
-// console.log(Math.max(prices));
-// console.log(maxProfit(prices));
+let prices = [7, 6, 4, 3, 1];
+console.log(Math.max(prices));
+console.log(maxProfit(prices));
